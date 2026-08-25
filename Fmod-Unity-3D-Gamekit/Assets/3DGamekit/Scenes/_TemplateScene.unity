@@ -18703,15 +18703,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4405054866690174, guid: 1fac0dae54de3224181696b709bb4d66, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.840012
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4405054866690174, guid: 1fac0dae54de3224181696b709bb4d66, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.9929976
+      value: 1.8800001
       objectReference: {fileID: 0}
     - target: {fileID: 4405054866690174, guid: 1fac0dae54de3224181696b709bb4d66, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 62.059998
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4405054866690174, guid: 1fac0dae54de3224181696b709bb4d66, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19135,11 +19135,36 @@ PrefabInstance:
       propertyPath: settings.Array.data[2].distances.Array.data[31]
       value: 1500
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 81615106476243140, guid: 1fac0dae54de3224181696b709bb4d66, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1039473416030948, guid: 1fac0dae54de3224181696b709bb4d66,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1642295905}
   m_SourcePrefab: {fileID: 100100000, guid: 1fac0dae54de3224181696b709bb4d66, type: 3}
+--- !u!1 &1642295904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1039473416030948, guid: 1fac0dae54de3224181696b709bb4d66,
+    type: 3}
+  m_PrefabInstance: {fileID: 1642295903}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1642295905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642295904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &1749381248
 GameObject:
   m_ObjectHideFlags: 0

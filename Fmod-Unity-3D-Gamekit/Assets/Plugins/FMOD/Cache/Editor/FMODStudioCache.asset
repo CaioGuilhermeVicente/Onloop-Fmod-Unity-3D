@@ -1,0 +1,181 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7778050900169000901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/sfx.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FmodBanks/Desktop/sfx.bank
+  Name: sfx
+  StudioPath: bank:/sfx
+  lastModified: 639232755003193860
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-7349735212350774542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FmodBanks/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639232753049124417
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-6588656678957434581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FmodBanks/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639232753049139446
+  FileSizes:
+  - Name: 
+    Value: 956
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -6588656678957434581}
+  - {fileID: -7349735212350774542}
+  - {fileID: 558291319238441945}
+  - {fileID: -7778050900169000901}
+  - {fileID: 6915252278999720234}
+  EditorEvents:
+  - {fileID: 4034971649355826545}
+  - {fileID: 6873186800543531134}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -7349735212350774542}
+  StringsBanks:
+  - {fileID: -6588656678957434581}
+  cacheVersion: 131860
+  cacheTime: 639232762503297189
+  SerializableEventsDict:
+  - key: event:/MusicTest
+    index: 0
+  - key: event:/footstepTest
+    index: 1
+--- !u!114 &558291319238441945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FmodBanks/Desktop/music.bank
+  Name: music
+  StudioPath: bank:/music
+  lastModified: 639232762503297189
+  FileSizes: []
+  Exists: 1
+--- !u!114 &4034971649355826545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicTest
+  m_EditorClassIdentifier: 
+  Path: event:/MusicTest
+  Guid:
+    Data1: -196443391
+    Data2: 1137953394
+    Data3: 128285600
+    Data4: 745601090
+  Banks:
+  - {fileID: 558291319238441945}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 26301
+--- !u!114 &6873186800543531134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/footstepTest
+  m_EditorClassIdentifier: 
+  Path: event:/footstepTest
+  Guid:
+    Data1: 1865568690
+    Data2: 1087712080
+    Data3: -1616486721
+    Data4: -1232909272
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 361
+--- !u!114 &6915252278999720234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/voices.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FmodBanks/Desktop/voices.bank
+  Name: voices
+  StudioPath: bank:/voices
+  lastModified: 639232753053015936
+  FileSizes: []
+  Exists: 1

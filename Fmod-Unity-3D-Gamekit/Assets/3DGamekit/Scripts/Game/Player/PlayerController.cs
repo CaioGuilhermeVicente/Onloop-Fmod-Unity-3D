@@ -24,7 +24,7 @@ namespace Gamekit3D
 
         public CameraSettings cameraSettings;            // Reference used to determine the camera's direction.
         public MeleeWeapon meleeWeapon;                  // Reference used to (de)activate the staff when attacking. 
-        public RandomAudioPlayer footstepPlayer;         // Random Audio Players used for various situations.
+        public FMODFootstepPlayer footstepPlayer;         // Random Audio Players used for various situations.
         public RandomAudioPlayer hurtAudioPlayer;
         public RandomAudioPlayer landingPlayer;
         public RandomAudioPlayer emoteLandingPlayer;
@@ -117,7 +117,7 @@ namespace Gamekit3D
 
             Transform footStepSource = transform.Find("FootstepSource");
             if (footStepSource != null)
-                footstepPlayer = footStepSource.GetComponent<RandomAudioPlayer>();
+                footstepPlayer = footStepSource.GetComponent<FMODFootstepPlayer>();
 
             Transform hurtSource = transform.Find("HurtSource");
             if (hurtSource != null)

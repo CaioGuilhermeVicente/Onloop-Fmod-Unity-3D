@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7949699373328762359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Landing/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 4238145717
+    data2: 2341354101
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Earth
+  - Grass
+  - Puddle
+  - Stone
+  Exists: 1
 --- !u!114 &-7778050900169000901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,8 +43,36 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 639256097618309439
+  lastModified: 639256121045844655
   FileSizes: []
+  Exists: 1
+--- !u!114 &-7388627213647595505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Run/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 4238145717
+    data2: 2341354101
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Earth
+  - Grass
+  - Puddle
+  - Stone
   Exists: 1
 --- !u!114 &-7349735212350774542
 MonoBehaviour:
@@ -33,7 +89,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639256097588406976
+  lastModified: 639256118020387373
   FileSizes: []
   Exists: 1
 --- !u!114 &-6588656678957434581
@@ -51,11 +107,67 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639256097588436992
+  lastModified: 639256118020407437
   FileSizes:
   - Name: 
-    Value: 1106
+    Value: 1506
   Exists: 1
+--- !u!114 &-5596397879066034296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ellen/Locomotion/Landing
+  m_EditorClassIdentifier: 
+  Path: event:/Ellen/Locomotion/Landing
+  Guid:
+    Data1: -237493555
+    Data2: 1190794998
+    Data3: 213178511
+    Data4: 310865744
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -7949699373328762359}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-3843351710981610985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Landing
+  m_EditorClassIdentifier: 
+  Path: event:/Landing
+  Guid:
+    Data1: 611387806
+    Data2: 1316282591
+    Data3: -1125857369
+    Data4: 1290981083
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1768346751946020608}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3144753636888903751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,6 +196,170 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-2271536802757419015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ellen/Death/Death
+  m_EditorClassIdentifier: 
+  Path: event:/Ellen/Death/Death
+  Guid:
+    Data1: 1004989426
+    Data2: 1279861255
+    Data3: -294027392
+    Data4: -2092195645
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1014
+--- !u!114 &-2075307619015583059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ellen/Damaged/Damaged
+  m_EditorClassIdentifier: 
+  Path: event:/Ellen/Damaged/Damaged
+  Guid:
+    Data1: 538795085
+    Data2: 1149583108
+    Data3: -295692103
+    Data4: -502287156
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 487
+--- !u!114 &-1768346751946020608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Landing/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 4238145717
+    data2: 2341354101
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Earth
+  - Grass
+  - Puddle
+  - Stone
+  Exists: 1
+--- !u!114 &-832584335943057191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walk/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 4238145717
+    data2: 2341354101
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Earth
+  - Grass
+  - Puddle
+  - Stone
+  Exists: 1
+--- !u!114 &-772384826689919316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ellen/Locomotion/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/Ellen/Locomotion/Jump
+  Guid:
+    Data1: -752524106
+    Data2: 1085440662
+    Data3: -687421779
+    Data4: 1229773757
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 287
+--- !u!114 &-330785684336087112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ellen/Attacks/Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Ellen/Attacks/Attack
+  Guid:
+    Data1: -1332746188
+    Data2: 1149086516
+    Data3: -983763783
+    Data4: -1820780976
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 358
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,13 +382,22 @@ MonoBehaviour:
   - {fileID: 4034971649355826545}
   - {fileID: 5613223337438830773}
   - {fileID: -3144753636888903751}
+  - {fileID: -3843351710981610985}
+  - {fileID: 2556577267873082416}
+  - {fileID: 7539390658555041656}
+  - {fileID: -330785684336087112}
+  - {fileID: 2122697877599082987}
+  - {fileID: -2075307619015583059}
+  - {fileID: -772384826689919316}
+  - {fileID: -5596397879066034296}
+  - {fileID: -2271536802757419015}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7349735212350774542}
   StringsBanks:
   - {fileID: -6588656678957434581}
   cacheVersion: 131860
-  cacheTime: 639256097618309439
+  cacheTime: 639256121045844655
   SerializableEventsDict:
   - key: event:/MusicTest
     index: 0
@@ -120,6 +405,24 @@ MonoBehaviour:
     index: 1
   - key: event:/Walk
     index: 2
+  - key: event:/Landing
+    index: 3
+  - key: event:/Jump
+    index: 4
+  - key: event:/Ellen/Locomotion/Walk
+    index: 5
+  - key: event:/Ellen/Attacks/Attack
+    index: 6
+  - key: event:/Ellen/Locomotion/Run
+    index: 7
+  - key: event:/Ellen/Damaged/Damaged
+    index: 8
+  - key: event:/Ellen/Locomotion/Jump
+    index: 9
+  - key: event:/Ellen/Locomotion/Landing
+    index: 10
+  - key: event:/Ellen/Death/Death
+    index: 11
 --- !u!114 &558291319238441945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +441,61 @@ MonoBehaviour:
   lastModified: 639256097592085219
   FileSizes: []
   Exists: 1
+--- !u!114 &2122697877599082987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ellen/Locomotion/Run
+  m_EditorClassIdentifier: 
+  Path: event:/Ellen/Locomotion/Run
+  Guid:
+    Data1: -1165049785
+    Data2: 1078047466
+    Data3: 42749855
+    Data4: 706222358
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -7388627213647595505}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2556577267873082416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/Jump
+  Guid:
+    Data1: -1288211697
+    Data2: 1081330291
+    Data3: 1290493624
+    Data4: 1164710634
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 287
 --- !u!114 &3041538291166663543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,3 +625,31 @@ MonoBehaviour:
   - Puddle
   - Stone
   Exists: 1
+--- !u!114 &7539390658555041656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ellen/Locomotion/Walk
+  m_EditorClassIdentifier: 
+  Path: event:/Ellen/Locomotion/Walk
+  Guid:
+    Data1: -734251742
+    Data2: 1141075830
+    Data3: -1326899543
+    Data4: -900680780
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -832584335943057191}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0

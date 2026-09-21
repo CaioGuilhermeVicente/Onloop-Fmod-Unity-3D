@@ -439,7 +439,7 @@ namespace Gamekit3D
             if (m_IsGrounded && !m_PreviouslyGrounded)
             {
                 landingPlayer.PlayRandomClip(m_CurrentWalkingSurface, bankId: m_ForwardSpeed < 4 ? 0 : 1);
-                emoteLandingPlayer.PlayRandomClip();
+                //emoteLandingPlayer.PlayRandomClip();
             }
 
             if (!m_IsGrounded && m_PreviouslyGrounded && m_VerticalSpeed > 0f)

@@ -30,8 +30,8 @@ namespace Gamekit3D
 
         public TimeEffect[] effects;
 
-        [Header("Audio")] public RandomAudioPlayer hitAudio;
-        public RandomAudioPlayer attackAudio;
+        [Header("Audio")] public FMODRandomAudioPlayer hitAudio;
+        public FMODRandomAudioPlayer attackAudio;
 
         public bool throwingHit
         {

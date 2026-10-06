@@ -17967,10 +17967,19 @@ PrefabInstance:
       propertyPath: footstepPlayer
       value: 
       objectReference: {fileID: 891457940}
+    - target: {fileID: 114579421511091938, guid: 9d620787554a948e3876fe7dbdba24e8,
+        type: 3}
+      propertyPath: emoteLandingPlayer
+      value: 
+      objectReference: {fileID: 1751108870}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1520815856060986, guid: 9d620787554a948e3876fe7dbdba24e8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1751108870}
   m_SourcePrefab: {fileID: 100100000, guid: 9d620787554a948e3876fe7dbdba24e8, type: 3}
 --- !u!114 &891457940 stripped
 MonoBehaviour:
@@ -19367,6 +19376,37 @@ MonoBehaviour:
   - {fileID: 1515862425126706, guid: cec935077b7f8ba4ea43285a8bd59b40, type: 3}
   - {fileID: 1100890239326732, guid: 65194f4f6d2fa7b499d9426fb9ace010, type: 3}
   - {fileID: 1084410997571076, guid: f5bd45ce36785ee438611c8122304386, type: 3}
+--- !u!1 &1751108868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1520815856060986, guid: 9d620787554a948e3876fe7dbdba24e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 891457938}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1751108870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751108868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa0fc2e92b493ea4dacb28a05e161e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioEvent:
+    Guid:
+      Data1: 1004989426
+      Data2: 1279861255
+      Data3: -294027392
+      Data4: -2092195645
+    Path: event:/Ellen/Death/Death
+  surfaceParameterName: Surface
+  speedParameterName: Speed
+  defaultSurfaceLabel: default
+  overrides: []
+  playing: 0
+  canPlay: 0
 --- !u!4 &1835486879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4035643436854338, guid: 9d620787554a948e3876fe7dbdba24e8,

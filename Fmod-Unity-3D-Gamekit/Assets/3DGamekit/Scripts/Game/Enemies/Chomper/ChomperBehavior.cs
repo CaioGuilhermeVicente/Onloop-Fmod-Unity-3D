@@ -34,13 +34,13 @@ namespace Gamekit3D
         public float timeToStopPursuit;
 
         [Header("Audio")]
-        public RandomAudioPlayer attackAudio;
-        public RandomAudioPlayer frontStepAudio;
-        public RandomAudioPlayer backStepAudio;
-        public RandomAudioPlayer hitAudio;
-        public RandomAudioPlayer gruntAudio;
-        public RandomAudioPlayer deathAudio;
-        public RandomAudioPlayer spottedAudio;
+        public FMODRandomAudioPlayer attackAudio;
+        public FMODRandomAudioPlayer frontStepAudio;
+        public FMODRandomAudioPlayer backStepAudio;
+        public FMODRandomAudioPlayer hitAudio;
+        public FMODRandomAudioPlayer gruntAudio;
+        public FMODRandomAudioPlayer deathAudio;
+        public FMODRandomAudioPlayer spottedAudio;
 
         protected float m_TimerSinceLostTarget = 0.0f;
 
@@ -246,7 +246,7 @@ namespace Gamekit3D
             //We unparent the hit source, as it would destroy it with the gameobject when it get replaced by the ragdol otherwise
             deathAudio.transform.SetParent(null, true);
             deathAudio.PlayRandomClip();
-            GameObject.Destroy(deathAudio, deathAudio.clip == null ? 0.0f : deathAudio.clip.length + 0.5f);
+            deathAudio.DestroyWhenFinished();
         }
 
         public void ApplyDamage(Damageable.DamageMessage msg)

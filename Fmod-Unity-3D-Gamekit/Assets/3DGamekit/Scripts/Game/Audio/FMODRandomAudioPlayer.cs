@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
@@ -14,6 +15,13 @@ namespace Gamekit3D
     /// landing, hurt, emotes de jump/death/attack, hit do MeleeWeapon,
     /// sons dos inimigos -- precise so trocar o TIPO do campo, sem mudar
     /// nenhuma linha de logica de chamada.
+    ///
+    /// Extras em relacao ao original:
+    ///  - Stop(): substitui o antigo audioSource.Stop().
+    ///  - DestroyWhenFinished(): substitui o antigo Destroy(player, clip.length + 0.5f).
+    ///  - Se nenhum evento for atribuido, o player fica em silencio (sem erro),
+    ///    o que permite trocar os componentes de um prefab e ir criando os
+    ///    eventos aos poucos.
     /// </summary>
     public class FMODRandomAudioPlayer : MonoBehaviour
     {
@@ -44,12 +52,16 @@ namespace Gamekit3D
 
         void Awake()
         {
-            m_Instance = RuntimeManager.CreateInstance(audioEvent);
-            RuntimeManager.AttachInstanceToGameObject(m_Instance, transform);
-
             for (int i = 0; i < overrides.Length; i++)
                 foreach (var mat in overrides[i].materials)
                     m_Lookup[mat] = overrides[i].surfaceLabel;
+
+            // Sem evento atribuido: nao cria instancia, e todos os metodos abaixo viram no-op.
+            if (audioEvent.IsNull)
+                return;
+
+            m_Instance = RuntimeManager.CreateInstance(audioEvent);
+            RuntimeManager.AttachInstanceToGameObject(m_Instance, transform);
         }
 
         /// <summary>
@@ -59,6 +71,9 @@ namespace Gamekit3D
         /// </summary>
         public void PlayRandomClip()
         {
+            if (!m_Instance.isValid())
+                return;
+
             m_Instance.start();
         }
 
@@ -69,6 +84,19 @@ namespace Gamekit3D
         /// </summary>
         public void PlayRandomClip(Material overrideMaterial, int bankId = 0)
         {
+            PlayRandomClip(overrideMaterial, (float)bankId);
+        }
+
+        /// <summary>
+        /// Versao com velocidade continua: speed01 vai de 0 (parado) a 1 (velocidade
+        /// maxima) e e enviado direto ao parametro Speed do evento, permitindo
+        /// crossfade suave entre andar e correr dentro do FMOD Studio.
+        /// </summary>
+        public void PlayRandomClip(Material overrideMaterial, float speed01)
+        {
+            if (!m_Instance.isValid())
+                return;
+
             if (!string.IsNullOrEmpty(surfaceParameterName))
             {
                 string label = defaultSurfaceLabel;
@@ -78,13 +106,64 @@ namespace Gamekit3D
             }
 
             if (!string.IsNullOrEmpty(speedParameterName))
-                m_Instance.setParameterByName(speedParameterName, bankId);
+                m_Instance.setParameterByName(speedParameterName, speed01);
 
             m_Instance.start();
         }
 
+        /// <summary>
+        /// Equivalente ao antigo audioSource.Stop(). Respeita o fade-out configurado
+        /// no evento (se o evento nao tiver fade-out, o corte e imediato).
+        /// </summary>
+        public void Stop()
+        {
+            if (m_Instance.isValid())
+                m_Instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+
+        /// <summary>
+        /// Equivalente ao antigo Destroy(player, clip.length + 0.5f). Como o FMOD nao
+        /// expoe um AudioClip, espera o evento terminar de tocar e so entao destroi este
+        /// componente. maxSeconds e um limite de seguranca caso o evento nunca termine.
+        /// </summary>
+        public void DestroyWhenFinished(float maxSeconds = 10f)
+        {
+            if (!m_Instance.isValid())
+            {
+                Destroy(this);
+                return;
+            }
+
+            StartCoroutine(DestroyWhenFinishedRoutine(maxSeconds));
+        }
+
+        IEnumerator DestroyWhenFinishedRoutine(float maxSeconds)
+        {
+            // O start() do FMOD e assincrono: logo depois dele o estado ainda pode constar
+            // como STOPPED. Esperar um instante evita destruir o som antes de ele comecar.
+            const float startGrace = 0.25f;
+            yield return new WaitForSeconds(startGrace);
+
+            float elapsed = startGrace;
+            PLAYBACK_STATE state = PLAYBACK_STATE.PLAYING;
+            while (elapsed < maxSeconds && m_Instance.isValid())
+            {
+                m_Instance.getPlaybackState(out state);
+                if (state == PLAYBACK_STATE.STOPPED)
+                    break;
+
+                yield return null;
+                elapsed += Time.deltaTime;
+            }
+
+            Destroy(this);
+        }
+
         void OnDestroy()
         {
+            if (!m_Instance.isValid())
+                return;
+
             m_Instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             m_Instance.release();
         }

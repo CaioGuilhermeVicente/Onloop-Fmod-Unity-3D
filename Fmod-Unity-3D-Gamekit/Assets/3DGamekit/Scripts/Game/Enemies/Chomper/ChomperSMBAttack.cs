@@ -30,7 +30,7 @@ namespace Gamekit3D
             base.OnSLStateExit(animator, stateInfo, layerIndex);
 
             if (m_MonoBehaviour.attackAudio != null)
-                m_MonoBehaviour.attackAudio.audioSource.Stop();
+                m_MonoBehaviour.attackAudio.Stop();
 
             m_MonoBehaviour.controller.SetFollowNavmeshAgent(true);
         }

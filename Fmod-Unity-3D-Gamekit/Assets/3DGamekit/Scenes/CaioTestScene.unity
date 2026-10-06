@@ -17738,18 +17738,6 @@ MonoBehaviour:
   - {fileID: 1805677463799496, guid: 8ce8dbafa28a4cb46b6800f9a7e33063, type: 3}
   - {fileID: 1879813381351616, guid: e0a5b2236c38da748b0cbee3c47e4aaf, type: 3}
   - {fileID: 1180857058224842, guid: 54e289309e0b92e4ab28726b701eca5d, type: 3}
---- !u!114 &786148811 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2720158652345135254, guid: 9d620787554a948e3876fe7dbdba24e8,
-    type: 3}
-  m_PrefabInstance: {fileID: 1726736059}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9baa0c5042cacce4db6fe7cb08381396, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &860052261
 GameObject:
   m_ObjectHideFlags: 0
@@ -18843,7 +18831,7 @@ PrefabInstance:
         type: 3}
       propertyPath: footstepPlayer
       value: 
-      objectReference: {fileID: 786148811}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

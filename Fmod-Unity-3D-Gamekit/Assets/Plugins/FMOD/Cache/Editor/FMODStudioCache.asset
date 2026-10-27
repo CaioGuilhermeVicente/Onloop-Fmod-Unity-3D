@@ -67,7 +67,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 639286224354693256
+  lastModified: 639287276758991997
   FileSizes: []
   Exists: 1
 --- !u!114 &-7349735212350774542
@@ -85,7 +85,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639286224200151524
+  lastModified: 639287276757441872
   FileSizes: []
   Exists: 1
 --- !u!114 &-6588656678957434581
@@ -103,7 +103,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639286224200156562
+  lastModified: 639287276757461867
   FileSizes:
   - Name: 
     Value: 1802
@@ -332,7 +332,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -6588656678957434581}
   cacheVersion: 131860
-  cacheTime: 639286224354693256
+  cacheTime: 639287276758991997
   SerializableEventsDict:
   - key: event:/Ellen/Locomotion/Walk
     index: 0
@@ -365,7 +365,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/music.bank
   Name: music
   StudioPath: bank:/music
-  lastModified: 639268818633748653
+  lastModified: 639256123752483473
   FileSizes: []
   Exists: 1
 --- !u!114 &3248193477068002292
@@ -412,7 +412,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/voices.bank
   Name: voices
   StudioPath: bank:/voices
-  lastModified: 639268818635543655
+  lastModified: 639250305902203429
   FileSizes: []
   Exists: 1
 --- !u!114 &7539390658555041656

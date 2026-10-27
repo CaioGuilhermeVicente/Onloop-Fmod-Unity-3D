@@ -497,7 +497,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4569376433081242}
-  - component: {fileID: 6650179427905157913}
+  - component: {fileID: 7018028200962401422}
   m_Layer: 9
   m_Name: FootstepSource
   m_TagString: Untagged
@@ -520,7 +520,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4656386208602306}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6650179427905157913
+--- !u!114 &7018028200962401422
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -534,11 +534,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioEvent:
     Guid:
-      Data1: -1165049785
-      Data2: 1078047466
-      Data3: 42749855
-      Data4: 706222358
-    Path: event:/Ellen/Locomotion/Run
+      Data1: -823481803
+      Data2: 1138863220
+      Data3: -2123855484
+      Data4: -1048787620
+    Path: event:/Ellen/Locomotion/footsteps
   surfaceParameterName: Surface
   speedParameterName: Speed
   defaultSurfaceLabel: default
@@ -5801,7 +5801,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: b86bedba3016387469ab3ac227a45992, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17674,7 +17673,7 @@ MonoBehaviour:
       Data4: 310865744
     Path: event:/Ellen/Locomotion/Landing
   surfaceParameterName: Surface
-  speedParameterName: 
+  speedParameterName: Speed
   defaultSurfaceLabel: default
   overrides:
   - materials:
@@ -21367,16 +21366,16 @@ MonoBehaviour:
   minTurnSpeed: 400
   maxTurnSpeed: 1200
   idleTimeout: 5
-  canAttack: 0
+  canAttack: 1
   cameraSettings: {fileID: 0}
   meleeWeapon: {fileID: 114298887321203036}
-  footstepPlayer: {fileID: 6650179427905157913}
-  hurtAudioPlayer: {fileID: 0}
+  footstepPlayer: {fileID: 0}
+  hurtAudioPlayer: {fileID: 8154569357033192074}
   landingPlayer: {fileID: 1802347380830210298}
   emoteLandingPlayer: {fileID: 0}
-  emoteDeathPlayer: {fileID: 0}
-  emoteAttackPlayer: {fileID: 0}
-  emoteJumpPlayer: {fileID: 0}
+  emoteDeathPlayer: {fileID: 8257957803667213587}
+  emoteAttackPlayer: {fileID: 8959636457741681767}
+  emoteJumpPlayer: {fileID: 5116685378130187356}
 --- !u!114 &114166992771378430
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,5 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8241214964503960606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/footsteps/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4254817979
+    data2: 4170980353
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-7949699373328762359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,36 +67,8 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 639256121045844655
+  lastModified: 639286224354693256
   FileSizes: []
-  Exists: 1
---- !u!114 &-7388627213647595505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Run/Surface
-  m_EditorClassIdentifier: 
-  Name: Surface
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 4238145717
-    data2: 2341354101
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Earth
-  - Grass
-  - Puddle
-  - Stone
   Exists: 1
 --- !u!114 &-7349735212350774542
 MonoBehaviour:
@@ -89,7 +85,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639256118020387373
+  lastModified: 639286224200151524
   FileSizes: []
   Exists: 1
 --- !u!114 &-6588656678957434581
@@ -107,10 +103,10 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639256118020407437
+  lastModified: 639286224200156562
   FileSizes:
   - Name: 
-    Value: 1506
+    Value: 1802
   Exists: 1
 --- !u!114 &-5596397879066034296
 MonoBehaviour:
@@ -140,62 +136,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &-3843351710981610985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Landing
-  m_EditorClassIdentifier: 
-  Path: event:/Landing
-  Guid:
-    Data1: 611387806
-    Data2: 1316282591
-    Data3: -1125857369
-    Data4: 1290981083
-  Banks:
-  - {fileID: -7778050900169000901}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -1768346751946020608}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-3144753636888903751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Walk
-  m_EditorClassIdentifier: 
-  Path: event:/Walk
-  Guid:
-    Data1: -1934312671
-    Data2: 1079843758
-    Data3: 452444323
-    Data4: 579182820
-  Banks:
-  - {fileID: -7778050900169000901}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 7442627840987610269}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-2271536802757419015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,34 +190,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 487
---- !u!114 &-1768346751946020608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Landing/Surface
-  m_EditorClassIdentifier: 
-  Name: Surface
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 4238145717
-    data2: 2341354101
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Earth
-  - Grass
-  - Puddle
-  - Stone
-  Exists: 1
 --- !u!114 &-832584335943057191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,6 +272,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 358
+--- !u!114 &-39269322211466919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/ambienceTest
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/ambienceTest
+  Guid:
+    Data1: -1518002074
+    Data2: 1082416314
+    Data3: 1662038697
+    Data4: -2144288188
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 60000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,50 +318,38 @@ MonoBehaviour:
   - {fileID: -7778050900169000901}
   - {fileID: 6915252278999720234}
   EditorEvents:
-  - {fileID: 4034971649355826545}
-  - {fileID: 5613223337438830773}
-  - {fileID: -3144753636888903751}
-  - {fileID: -3843351710981610985}
-  - {fileID: 2556577267873082416}
   - {fileID: 7539390658555041656}
   - {fileID: -330785684336087112}
-  - {fileID: 2122697877599082987}
   - {fileID: -2075307619015583059}
   - {fileID: -772384826689919316}
   - {fileID: -5596397879066034296}
   - {fileID: -2271536802757419015}
+  - {fileID: 3248193477068002292}
+  - {fileID: -39269322211466919}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7349735212350774542}
   StringsBanks:
   - {fileID: -6588656678957434581}
   cacheVersion: 131860
-  cacheTime: 639256121045844655
+  cacheTime: 639286224354693256
   SerializableEventsDict:
-  - key: event:/MusicTest
-    index: 0
-  - key: event:/Run
-    index: 1
-  - key: event:/Walk
-    index: 2
-  - key: event:/Landing
-    index: 3
-  - key: event:/Jump
-    index: 4
   - key: event:/Ellen/Locomotion/Walk
-    index: 5
+    index: 0
   - key: event:/Ellen/Attacks/Attack
-    index: 6
-  - key: event:/Ellen/Locomotion/Run
-    index: 7
+    index: 1
   - key: event:/Ellen/Damaged/Damaged
-    index: 8
+    index: 2
   - key: event:/Ellen/Locomotion/Jump
-    index: 9
+    index: 3
   - key: event:/Ellen/Locomotion/Landing
-    index: 10
+    index: 4
   - key: event:/Ellen/Death/Death
-    index: 11
+    index: 5
+  - key: event:/Ellen/Locomotion/footsteps
+    index: 6
+  - key: event:/Environment/ambienceTest
+    index: 7
 --- !u!114 &558291319238441945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,10 +365,10 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/music.bank
   Name: music
   StudioPath: bank:/music
-  lastModified: 639256097592085219
+  lastModified: 639268818633748653
   FileSizes: []
   Exists: 1
---- !u!114 &2122697877599082987
+--- !u!114 &3248193477068002292
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -451,131 +378,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ellen/Locomotion/Run
+  m_Name: event:/Ellen/Locomotion/footsteps
   m_EditorClassIdentifier: 
-  Path: event:/Ellen/Locomotion/Run
+  Path: event:/Ellen/Locomotion/footsteps
   Guid:
-    Data1: -1165049785
-    Data2: 1078047466
-    Data3: 42749855
-    Data4: 706222358
+    Data1: -823481803
+    Data2: 1138863220
+    Data3: -2123855484
+    Data4: -1048787620
   Banks:
   - {fileID: -7778050900169000901}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -7388627213647595505}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &2556577267873082416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Jump
-  m_EditorClassIdentifier: 
-  Path: event:/Jump
-  Guid:
-    Data1: -1288211697
-    Data2: 1081330291
-    Data3: 1290493624
-    Data4: 1164710634
-  Banks:
-  - {fileID: -7778050900169000901}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 287
---- !u!114 &3041538291166663543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Run/Surface
-  m_EditorClassIdentifier: 
-  Name: Surface
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 4238145717
-    data2: 2341354101
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Earth
-  - Grass
-  - Puddle
-  - Stone
-  Exists: 1
---- !u!114 &4034971649355826545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MusicTest
-  m_EditorClassIdentifier: 
-  Path: event:/MusicTest
-  Guid:
-    Data1: -196443391
-    Data2: 1137953394
-    Data3: 128285600
-    Data4: 745601090
-  Banks:
-  - {fileID: 558291319238441945}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 26301
---- !u!114 &5613223337438830773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Run
-  m_EditorClassIdentifier: 
-  Path: event:/Run
-  Guid:
-    Data1: 2135285255
-    Data2: 1284982442
-    Data3: 1284803752
-    Data4: 1670651538
-  Banks:
-  - {fileID: -7778050900169000901}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 3041538291166663543}
+  - {fileID: 9032211528680102058}
+  - {fileID: -8241214964503960606}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -594,36 +412,8 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/voices.bank
   Name: voices
   StudioPath: bank:/voices
-  lastModified: 639250305902203429
+  lastModified: 639268818635543655
   FileSizes: []
-  Exists: 1
---- !u!114 &7442627840987610269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Walk/Surface
-  m_EditorClassIdentifier: 
-  Name: Surface
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 4238145717
-    data2: 2341354101
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Earth
-  - Grass
-  - Puddle
-  - Stone
   Exists: 1
 --- !u!114 &7539390658555041656
 MonoBehaviour:
@@ -653,3 +443,31 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &9032211528680102058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/footsteps/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 4238145717
+    data2: 2341354101
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Earth
+  - Grass
+  - Puddle
+  - Stone
+  Exists: 1

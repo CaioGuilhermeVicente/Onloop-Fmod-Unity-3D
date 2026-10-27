@@ -67,7 +67,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 639268820879450471
+  lastModified: 639286224354693256
   FileSizes: []
   Exists: 1
 --- !u!114 &-7349735212350774542
@@ -85,7 +85,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639268818633722319
+  lastModified: 639286224200151524
   FileSizes: []
   Exists: 1
 --- !u!114 &-6588656678957434581
@@ -103,10 +103,10 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639268818633728361
+  lastModified: 639286224200156562
   FileSizes:
   - Name: 
-    Value: 1682
+    Value: 1802
   Exists: 1
 --- !u!114 &-5596397879066034296
 MonoBehaviour:
@@ -272,6 +272,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 358
+--- !u!114 &-39269322211466919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/ambienceTest
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/ambienceTest
+  Guid:
+    Data1: -1518002074
+    Data2: 1082416314
+    Data3: 1662038697
+    Data4: -2144288188
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 60000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,13 +325,14 @@ MonoBehaviour:
   - {fileID: -5596397879066034296}
   - {fileID: -2271536802757419015}
   - {fileID: 3248193477068002292}
+  - {fileID: -39269322211466919}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7349735212350774542}
   StringsBanks:
   - {fileID: -6588656678957434581}
   cacheVersion: 131860
-  cacheTime: 639268820879450471
+  cacheTime: 639286224354693256
   SerializableEventsDict:
   - key: event:/Ellen/Locomotion/Walk
     index: 0
@@ -320,6 +348,8 @@ MonoBehaviour:
     index: 5
   - key: event:/Ellen/Locomotion/footsteps
     index: 6
+  - key: event:/Environment/ambienceTest
+    index: 7
 --- !u!114 &558291319238441945
 MonoBehaviour:
   m_ObjectHideFlags: 0

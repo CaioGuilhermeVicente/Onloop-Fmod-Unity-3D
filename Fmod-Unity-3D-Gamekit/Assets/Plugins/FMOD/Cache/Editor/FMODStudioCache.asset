@@ -67,7 +67,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 639288214301614104
+  lastModified: 639288249561870782
   FileSizes: []
   Exists: 1
 --- !u!114 &-7349735212350774542
@@ -85,7 +85,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639288210855333254
+  lastModified: 639288257806384854
   FileSizes: []
   Exists: 1
 --- !u!114 &-6588656678957434581
@@ -103,10 +103,10 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639288210855363274
+  lastModified: 639288257806414858
   FileSizes:
   - Name: 
-    Value: 2500
+    Value: 2708
   Exists: 1
 --- !u!114 &-5596397879066034296
 MonoBehaviour:
@@ -163,6 +163,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1378
+--- !u!114 &-4198546899331631748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/CaveReverbZone
+  m_EditorClassIdentifier: 
+  Path: snapshot:/CaveReverbZone
+  Guid:
+    Data1: -1485373193
+    Data2: 1152497306
+    Data3: -2018270078
+    Data4: -716175230
+  Banks:
+  - {fileID: -7349735212350774542}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-3033482479029225287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,13 +470,15 @@ MonoBehaviour:
   - {fileID: 3954318767116773145}
   - {fileID: 1556979351102792245}
   - {fileID: 4757131766064071673}
+  - {fileID: 5854356580298742587}
+  - {fileID: -4198546899331631748}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7349735212350774542}
   StringsBanks:
   - {fileID: -6588656678957434581}
   cacheVersion: 131860
-  cacheTime: 639288214301614104
+  cacheTime: 639288257806414858
   SerializableEventsDict:
   - key: event:/Ellen/Locomotion/Walk
     index: 0
@@ -485,6 +514,10 @@ MonoBehaviour:
     index: 15
   - key: event:/Enemies/Chomper/Locomotion/FrontFootstep
     index: 16
+  - key: snapshot:/MiniCaveReverbZone
+    index: 17
+  - key: snapshot:/CaveReverbZone
+    index: 18
 --- !u!114 &558291319238441945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,6 +673,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2415
+--- !u!114 &5854356580298742587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/MiniCaveReverbZone
+  m_EditorClassIdentifier: 
+  Path: snapshot:/MiniCaveReverbZone
+  Guid:
+    Data1: 1130006948
+    Data2: 1281387035
+    Data3: -151197252
+    Data4: -1286002736
+  Banks:
+  - {fileID: -7349735212350774542}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &6915252278999720234
 MonoBehaviour:
   m_ObjectHideFlags: 0

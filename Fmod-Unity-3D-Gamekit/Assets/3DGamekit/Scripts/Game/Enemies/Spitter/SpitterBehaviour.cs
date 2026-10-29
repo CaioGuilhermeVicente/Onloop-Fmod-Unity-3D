@@ -137,6 +137,12 @@ namespace Gamekit3D
                 backStepAudio.PlayRandomClip ();
         }
 
+        /// <summary>
+        /// Mantido vazio de proposito: a animacao de idle ainda tem um AnimationEvent chamando "Grunt".
+        /// O som de idle agora vem do Event Emitter do FMOD, entao este metodo so evita o erro "has no receiver".
+        /// </summary>
+        public void Grunt() { }
+
         public void Spotted()
         {
             if (spottedAudio != null)

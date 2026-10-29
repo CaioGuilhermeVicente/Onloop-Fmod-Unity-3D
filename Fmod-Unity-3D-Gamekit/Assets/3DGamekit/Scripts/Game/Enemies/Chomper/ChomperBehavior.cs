@@ -38,7 +38,6 @@ namespace Gamekit3D
         public FMODRandomAudioPlayer frontStepAudio;
         public FMODRandomAudioPlayer backStepAudio;
         public FMODRandomAudioPlayer hitAudio;
-        public FMODRandomAudioPlayer gruntAudio;
         public FMODRandomAudioPlayer deathAudio;
         public FMODRandomAudioPlayer spottedAudio;
 
@@ -71,15 +70,6 @@ namespace Gamekit3D
                 frontStepAudio.PlayRandomClip();
             else if (backStepAudio != null && frontFoot == 0)
                 backStepAudio.PlayRandomClip ();
-        }
-
-        /// <summary>
-        /// Called by animation events.
-        /// </summary>
-        public void Grunt ()
-        {
-            if (gruntAudio != null)
-                gruntAudio.PlayRandomClip ();
         }
 
         public void Spotted()

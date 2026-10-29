@@ -46,11 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioEvent:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1933906189
+      Data2: 1204010135
+      Data3: 2070590617
+      Data4: -769736030
+    Path: event:/Enemies/Chomper/Locomotion/FrontFootstep
   surfaceParameterName: Surface
   speedParameterName: Speed
   defaultSurfaceLabel: default
@@ -612,11 +612,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioEvent:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1533246378
+      Data2: 1096823251
+      Data3: 340021390
+      Data4: 889717017
+    Path: event:/Enemies/Chomper/Attack/ChomperAttack
   surfaceParameterName: Surface
   speedParameterName: Speed
   defaultSurfaceLabel: default
@@ -1134,11 +1134,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioEvent:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1037526474
+      Data2: 1246315190
+      Data3: 161430438
+      Data4: 681771801
+    Path: event:/Enemies/Chomper/Damaged/ChomperGetDamaged
   surfaceParameterName: Surface
   speedParameterName: Speed
   defaultSurfaceLabel: default
@@ -1279,11 +1279,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioEvent:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 2041963734
+      Data2: 1161964470
+      Data3: 196064433
+      Data4: -805214541
+    Path: event:/Enemies/Chomper/Locomotion/BackFootstep
   surfaceParameterName: Surface
   speedParameterName: Speed
   defaultSurfaceLabel: default
@@ -3063,13 +3063,12 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 2147483648
   timeToStopPursuit: 3
-  attackAudio: {fileID: 0}
-  frontStepAudio: {fileID: 0}
-  backStepAudio: {fileID: 0}
-  hitAudio: {fileID: 0}
-  gruntAudio: {fileID: 0}
-  deathAudio: {fileID: 0}
-  spottedAudio: {fileID: 0}
+  attackAudio: {fileID: 3655552738870677265}
+  frontStepAudio: {fileID: 8857172118154418679}
+  backStepAudio: {fileID: 6610434471536101505}
+  hitAudio: {fileID: 5929203200224915706}
+  deathAudio: {fileID: 1699845522030702092}
+  spottedAudio: {fileID: 6839710357773381798}
 --- !u!114 &114700785457422906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3436,7 +3435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4304430134133404}
-  - component: {fileID: 4765836806338808781}
+  - component: {fileID: 7725426560976361194}
   m_Layer: 23
   m_Name: GruntSource
   m_TagString: Untagged
@@ -3459,7 +3458,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4558756240328940}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4765836806338808781
+--- !u!114 &7725426560976361194
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3468,22 +3467,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1817494547040594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa0fc2e92b493ea4dacb28a05e161e1c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioEvent:
+  CollisionTag: 
+  EventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  surfaceParameterName: Surface
-  speedParameterName: Speed
-  defaultSurfaceLabel: default
-  overrides: []
-  playing: 0
-  canPlay: 0
+      Data1: 969003365
+      Data2: 1198202710
+      Data3: -2067397185
+      Data4: -1654895105
+    Path: event:/Enemies/Chomper/Idle/ChomperIdle
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1820266755436440
 GameObject:
   m_ObjectHideFlags: 0
@@ -3562,11 +3567,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioEvent:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1237127461
+      Data2: 1134304377
+      Data3: -974543221
+      Data4: 134272161
+    Path: event:/Enemies/Chomper/Death/ChomperDeath
   surfaceParameterName: Surface
   speedParameterName: Speed
   defaultSurfaceLabel: default

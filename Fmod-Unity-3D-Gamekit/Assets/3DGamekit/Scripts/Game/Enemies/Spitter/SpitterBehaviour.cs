@@ -28,13 +28,12 @@ namespace Gamekit3D
         public RangeWeapon rangeWeapon;
 
         [Header("Audio")]
-        public RandomAudioPlayer attackAudio;
-        public RandomAudioPlayer frontStepAudio;
-        public RandomAudioPlayer backStepAudio;
-        public RandomAudioPlayer hitAudio;
-        public RandomAudioPlayer gruntAudio;
-        public RandomAudioPlayer deathAudio;
-        public RandomAudioPlayer spottedAudio;
+        public FMODRandomAudioPlayer attackAudio;
+        public FMODRandomAudioPlayer frontStepAudio;
+        public FMODRandomAudioPlayer backStepAudio;
+        public FMODRandomAudioPlayer hitAudio;
+        public FMODRandomAudioPlayer deathAudio;
+        public FMODRandomAudioPlayer spottedAudio;
 
         public EnemyController controller { get { return m_Controller; } }
         public PlayerController target { get { return m_Target; } }
@@ -86,7 +85,7 @@ namespace Gamekit3D
             deathAudio.transform.SetParent(null, true);
             deathAudio.PlayRandomClip();
 
-            GameObject.Destroy(deathAudio, deathAudio.clip == null ? 0.0f : deathAudio.clip.length + 0.5f);
+            deathAudio.DestroyWhenFinished();
         }
 
         public void ApplyDamage(Damageable.DamageMessage msg)
@@ -136,12 +135,6 @@ namespace Gamekit3D
                 frontStepAudio.PlayRandomClip();
             else if (backStepAudio != null && frontFoot == 0)
                 backStepAudio.PlayRandomClip ();
-        }
-
-        public void Grunt ()
-        {
-            if (gruntAudio != null)
-                gruntAudio.PlayRandomClip ();
         }
 
         public void Spotted()

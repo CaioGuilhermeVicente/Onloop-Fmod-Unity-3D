@@ -67,7 +67,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 639287320290070528
+  lastModified: 639288214301614104
   FileSizes: []
   Exists: 1
 --- !u!114 &-7349735212350774542
@@ -85,7 +85,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639287317260320483
+  lastModified: 639288210855333254
   FileSizes: []
   Exists: 1
 --- !u!114 &-6588656678957434581
@@ -103,10 +103,10 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639287317260480458
+  lastModified: 639288210855363274
   FileSizes:
   - Name: 
-    Value: 2020
+    Value: 2500
   Exists: 1
 --- !u!114 &-5596397879066034296
 MonoBehaviour:
@@ -136,6 +136,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &-5070548871597884174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemies/Chomper/Attack/ChomperAttack
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Chomper/Attack/ChomperAttack
+  Guid:
+    Data1: 1533246378
+    Data2: 1096823251
+    Data3: 340021390
+    Data4: 889717017
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1378
+--- !u!114 &-3033482479029225287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/Props/DestructibleBoxes/BoxHit
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/Props/DestructibleBoxes/BoxHit
+  Guid:
+    Data1: 509563273
+    Data2: 1231995153
+    Data3: -1179940441
+    Data4: 1228966953
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1048
+--- !u!114 &-2428749717808254830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemies/Chomper/Idle/ChomperIdle
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Chomper/Idle/ChomperIdle
+  Guid:
+    Data1: 969003365
+    Data2: 1198202710
+    Data3: -2067397185
+    Data4: -1654895105
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
 --- !u!114 &-2271536802757419015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,7 +379,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 358
+  Length: 872
 --- !u!114 &-39269322211466919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,13 +435,21 @@ MonoBehaviour:
   - {fileID: 3248193477068002292}
   - {fileID: -39269322211466919}
   - {fileID: -1654412924580869519}
+  - {fileID: 5662960842345755065}
+  - {fileID: -2428749717808254830}
+  - {fileID: 7511676458439217219}
+  - {fileID: -3033482479029225287}
+  - {fileID: -5070548871597884174}
+  - {fileID: 3954318767116773145}
+  - {fileID: 1556979351102792245}
+  - {fileID: 4757131766064071673}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7349735212350774542}
   StringsBanks:
   - {fileID: -6588656678957434581}
   cacheVersion: 131860
-  cacheTime: 639287320290070528
+  cacheTime: 639288214301614104
   SerializableEventsDict:
   - key: event:/Ellen/Locomotion/Walk
     index: 0
@@ -380,6 +469,22 @@ MonoBehaviour:
     index: 7
   - key: event:/Environment/Props/DropShip
     index: 8
+  - key: event:/Enemies/Chomper/Damaged/ChomperGetDamaged
+    index: 9
+  - key: event:/Enemies/Chomper/Idle/ChomperIdle
+    index: 10
+  - key: event:/Environment/Props/DestructibleBoxes/BoxDestroyed
+    index: 11
+  - key: event:/Environment/Props/DestructibleBoxes/BoxHit
+    index: 12
+  - key: event:/Enemies/Chomper/Attack/ChomperAttack
+    index: 13
+  - key: event:/Enemies/Chomper/Locomotion/BackFootstep
+    index: 14
+  - key: event:/Enemies/Chomper/Death/ChomperDeath
+    index: 15
+  - key: event:/Enemies/Chomper/Locomotion/FrontFootstep
+    index: 16
 --- !u!114 &558291319238441945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,6 +503,33 @@ MonoBehaviour:
   lastModified: 639287317260550489
   FileSizes: []
   Exists: 1
+--- !u!114 &1556979351102792245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemies/Chomper/Death/ChomperDeath
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Chomper/Death/ChomperDeath
+  Guid:
+    Data1: -1237127461
+    Data2: 1134304377
+    Data3: -974543221
+    Data4: 134272161
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2415
 --- !u!114 &3248193477068002292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -427,6 +559,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &3954318767116773145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemies/Chomper/Locomotion/BackFootstep
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Chomper/Locomotion/BackFootstep
+  Guid:
+    Data1: 2041963734
+    Data2: 1161964470
+    Data3: 196064433
+    Data4: -805214541
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
+--- !u!114 &4757131766064071673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemies/Chomper/Locomotion/FrontFootstep
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Chomper/Locomotion/FrontFootstep
+  Guid:
+    Data1: -1933906189
+    Data2: 1204010135
+    Data3: 2070590617
+    Data4: -769736030
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 327
+--- !u!114 &5662960842345755065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemies/Chomper/Damaged/ChomperGetDamaged
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Chomper/Damaged/ChomperGetDamaged
+  Guid:
+    Data1: -1037526474
+    Data2: 1246315190
+    Data3: 161430438
+    Data4: 681771801
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2415
 --- !u!114 &6915252278999720234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,6 +658,33 @@ MonoBehaviour:
   lastModified: 639287317275690706
   FileSizes: []
   Exists: 1
+--- !u!114 &7511676458439217219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/Props/DestructibleBoxes/BoxDestroyed
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/Props/DestructibleBoxes/BoxDestroyed
+  Guid:
+    Data1: 530688116
+    Data2: 1167190442
+    Data3: 439998651
+    Data4: -585116612
+  Banks:
+  - {fileID: -7778050900169000901}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3226
 --- !u!114 &7539390658555041656
 MonoBehaviour:
   m_ObjectHideFlags: 0

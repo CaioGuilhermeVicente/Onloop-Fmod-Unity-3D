@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 namespace Gamekit3D
 {
@@ -23,8 +24,9 @@ namespace Gamekit3D
         [Tooltip("Will the explosion VFX play where the grenade explode or on the closest ground")]
         public bool vfxOnGround = false;
 
-        public RandomAudioPlayer explosionPlayer;
-        public RandomAudioPlayer bouncePlayer;
+        [Tooltip("Evento FMOD 3D tocado como one-shot na posicao da explosao. Nao precisa de componente no prefab.")]
+        public EventReference explosionEvent;
+        public FMODRandomAudioPlayer bouncePlayer;
 
         protected float m_SinceFired;
 
@@ -86,11 +88,8 @@ namespace Gamekit3D
 
         public void Explosion()
         {
-            if (explosionPlayer)
-            {
-                explosionPlayer.transform.SetParent(null);
-                explosionPlayer.PlayRandomClip();
-            }
+            if (!explosionEvent.IsNull)
+                RuntimeManager.PlayOneShot(explosionEvent, transform.position);
 
             int count = Physics.OverlapSphereNonAlloc(transform.position, explosionRadius, m_ExplosionHitCache,
                 damageMask.value);

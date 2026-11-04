@@ -67,9 +67,62 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 639288301968949661
+  lastModified: 639294135579738245
   FileSizes: []
   Exists: 1
+--- !u!114 &-7601519944038798002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Batera
+  m_EditorClassIdentifier: 
+  Name: Batera
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3711784202
+    data2: 3892457279
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-7371333885840389722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  Guid:
+    Data1: -725355040
+    Data2: 1159548652
+    Data3: -2016879945
+    Data4: 1525144808
+  Banks:
+  - {fileID: 558291319238441945}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7601519944038798002}
+  - {fileID: -3102844946786157428}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 69333
 --- !u!114 &-7349735212350774542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,7 +138,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639288295346561620
+  lastModified: 639294135577512967
   FileSizes: []
   Exists: 1
 --- !u!114 &-6588656678957434581
@@ -103,10 +156,10 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639288295346601624
+  lastModified: 639294135577528079
   FileSizes:
   - Name: 
-    Value: 2778
+    Value: 2898
   Exists: 1
 --- !u!114 &-5596397879066034296
 MonoBehaviour:
@@ -217,6 +270,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1739
+--- !u!114 &-3102844946786157428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/resto
+  m_EditorClassIdentifier: 
+  Name: resto
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 578035940
+    data2: 999514427
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-3033482479029225287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -500,13 +577,14 @@ MonoBehaviour:
   - {fileID: 5854356580298742587}
   - {fileID: -4198546899331631748}
   - {fileID: -3133614803645012871}
+  - {fileID: -7371333885840389722}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7349735212350774542}
   StringsBanks:
   - {fileID: -6588656678957434581}
   cacheVersion: 131860
-  cacheTime: 639288301968949661
+  cacheTime: 639294135579844587
   SerializableEventsDict:
   - key: event:/Ellen/Locomotion/Walk
     index: 0
@@ -548,6 +626,8 @@ MonoBehaviour:
     index: 18
   - key: event:/Enemies/PlayerSpotted/PlayerSpotted
     index: 19
+  - key: event:/Music
+    index: 20
 --- !u!114 &558291319238441945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,7 +643,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/music.bank
   Name: music
   StudioPath: bank:/music
-  lastModified: 639287317260550489
+  lastModified: 639294135577733022
   FileSizes: []
   Exists: 1
 --- !u!114 &1556979351102792245
@@ -745,7 +825,7 @@ MonoBehaviour:
   Path: Assets/FmodBanks/Desktop/voices.bank
   Name: voices
   StudioPath: bank:/voices
-  lastModified: 639287317275690706
+  lastModified: 639294135579844587
   FileSizes: []
   Exists: 1
 --- !u!114 &7511676458439217219
